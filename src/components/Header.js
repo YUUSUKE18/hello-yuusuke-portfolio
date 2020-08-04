@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "gatsby";
-import Img from "gatsby-image";
 
 const Header = ({ siteTitle }) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -11,7 +10,7 @@ const Header = ({ siteTitle }) => {
           <Link to="/">{siteTitle}</Link>
         </div>
         <div
-          class="block px-4 cursor-pointer sm:hidden"
+          class="block px-4 py-2 cursor-pointer sm:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg class="w-6" fill="currentColor" viewBox="0 0 20 20">
@@ -25,7 +24,7 @@ const Header = ({ siteTitle }) => {
       </nav>
       <div
         className={isOpen ? "block" : "hidden"}
-        className="px-2 py-2 sm:block"
+        className="px-2 py-2 hidden sm:block"
       >
         <ul className="sm:flex">
           <li>
