@@ -1,4 +1,7 @@
-var plugins = []
+var plugins = [{
+      plugin: require('/Users/yuusuke_mbp/Desktop/hello-yuusuke-portfolio/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"Yuusuke Okamoto","short_name":"YuusukeOkamoto","start_url":"/","background_color":"#337ab7","theme_color":"#337ab7","display":"fullscreen","icon":"static/asstes/favicon.ico","cache_busting_mode":"query","include_favicon":true,"legacy":true,"theme_color_in_head":true,"cacheDigest":null},
+    }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
 //   {
