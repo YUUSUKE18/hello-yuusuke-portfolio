@@ -21,7 +21,7 @@ module.exports = {
         background_color: `#337ab7`,
         theme_color: `#337ab7`,
         display: `fullscreen`,
-        icon: `src/static/asstes/favicon.ico`, // This path is relative to the root of the site.
+        icon: `src/static/favicon.ico`, // This path is relative to the root of the site.
       },
     },
     {
