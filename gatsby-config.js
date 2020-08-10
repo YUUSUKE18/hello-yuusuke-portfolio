@@ -21,7 +21,7 @@ module.exports = {
         background_color: `#337ab7`,
         theme_color: `#337ab7`,
         display: `fullscreen`,
-        icon: `src/static/favicon.ico`,
+        icon: `src/static/favicon.png`,
         crossOrigin: `use-credentials`, // This path is relative to the root of the site.
       },
     },
