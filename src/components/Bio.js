@@ -1,6 +1,6 @@
 import React from "react";
 
-import PersonalImg from "../images/yuusuke.jpg";
+import PersonalImg from "../images/Yuusuke.jpg";
 const Bio = () => {
   return (
     <div id="about" className="py-3 px-5 m-2 sm:px-5 sm:m-5">
