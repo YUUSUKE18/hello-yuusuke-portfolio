@@ -12,6 +12,7 @@ module.exports = {
     author: "Yuusuke Okamoto",
   },
   plugins: [
+    `gatsby-plugin-netlify`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
@@ -21,8 +22,8 @@ module.exports = {
         background_color: `#337ab7`,
         theme_color: `#337ab7`,
         display: `fullscreen`,
-        icon: `src/static/favicon.png`,
-        crossOrigin: `use-credentials`, // This path is relative to the root of the site.
+        icon: `static/favicon.png`,
+        // This path is relative to the root of the site.
       },
     },
     `gatsby-plugin-offline`,
