@@ -22,7 +22,7 @@ module.exports = {
         background_color: `#337ab7`,
         theme_color: `#337ab7`,
         display: `fullscreen`,
-        icon: `static/favicon.png`,
+        icon: `src/images/favicon.png`,
         // This path is relative to the root of the site.
       },
     },
