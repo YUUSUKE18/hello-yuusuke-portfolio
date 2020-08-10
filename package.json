@@ -20,10 +20,12 @@
     "gatsby-plugin-netlify": "^2.3.12",
     "gatsby-plugin-offline": "^3.2.22",
     "gatsby-plugin-postcss": "^2.3.11",
+    "gatsby-plugin-react-helmet": "^3.3.10",
     "gatsby-plugin-sitemap": "^2.4.11",
     "gatsby-source-filesystem": "^2.3.23",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
+    "react-helmet": "^6.1.0",
     "react-icons": "^3.10.0",
     "tailwindcss": "^1.6.1"
   },

@@ -13,16 +13,17 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-netlify`,
+    `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
         name: `Yuusuke Okamoto`,
-        short_name: `YuusukeOkamoto`,
+        short_name: `Yuusuke`,
         start_url: `/`,
         background_color: `#337ab7`,
         theme_color: `#337ab7`,
         display: `fullscreen`,
-        icon: `src/images/favicon.png`,
+        icon: `src/images/yuusuke.jpg`,
         // This path is relative to the root of the site.
       },
     },
