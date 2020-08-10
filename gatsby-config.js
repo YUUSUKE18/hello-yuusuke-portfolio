@@ -21,9 +21,11 @@ module.exports = {
         background_color: `#337ab7`,
         theme_color: `#337ab7`,
         display: `fullscreen`,
-        icon: `src/static/favicon.ico`, // This path is relative to the root of the site.
+        icon: `src/static/favicon.ico`,
+        crossOrigin: `use-credentials`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-offline`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
