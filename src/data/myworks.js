@@ -21,6 +21,6 @@ export default [
     title: "JS Simple Game",
     path: "https://javascript-games.hostman.site/",
     description: "This is vanilla JavaScript Game",
-    tech: "JavaScript",
+    tech: "JavaScript(No Framework only JS)",
   },
 ];
