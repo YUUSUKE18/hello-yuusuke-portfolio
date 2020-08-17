@@ -12,7 +12,6 @@ const Works = () => {
         {myWorks.map((mywork) => {
           return (
             <div class="max-w-sm rounded overflow-hidden shadow-lg p-4 m-auto mt-5 sm:mx-3">
-              <img class="w-full" src={siteImg} alt={siteImg} />
               <div class="px-6 py-4">
                 <div class="font-bold text-xl mb-2">{mywork.title}</div>
                 <p class="text-gray-700 text-base">{mywork.description}</p>
