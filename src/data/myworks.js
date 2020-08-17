@@ -2,19 +2,19 @@ export default [
   {
     title: "Hello React Blog",
     path: "https://hello-react-blog.netlify.app/",
-    source: "https://github.com/taniarascia/takenote",
     description: "This is a react output blog.",
+    tech: "JavaScript(React/Gatsby.js)/Tailwind CSS",
   },
   {
-    title: "Hello React Blog",
-    path: "https://hello-react-blog.netlify.app/",
-    source: "https://github.com/taniarascia/takenote",
-    description: "This is a react output blog.",
+    title: "Programming Coaching App",
+    path: "",
+    description: "This is a simple application.",
+    tech: "Java(Spring Boot)/Thyeme Leaf/Bootstrap",
   },
   {
-    title: "Hello React Blog",
-    path: "https://hello-react-blog.netlify.app/",
-    source: "https://github.com/taniarascia/takenote",
-    description: "This is a react output blog.",
+    title: "Hello Yuusuke",
+    path: "https://hello-yuusuke.work",
+    description: "This is my portfolio.",
+    tech: "JavaScript(React/Gatsby.js)/Tailwind CSS",
   },
 ];
