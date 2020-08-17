@@ -17,4 +17,10 @@ export default [
     description: "This is my portfolio.",
     tech: "JavaScript(React/Gatsby.js)/Tailwind CSS",
   },
+  {
+    title: "JS Simple Game",
+    path: "https://javascript-games.hostman.site/",
+    description: "This is vanilla JavaScript Game",
+    tech: "JavaScript",
+  },
 ];
