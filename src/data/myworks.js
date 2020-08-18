@@ -7,7 +7,7 @@ export default [
   },
   {
     title: "Programming Coaching App",
-    path: "",
+    path: "https://github.com/k-sasaking/ProgramingCoathingApp",
     description: "This is a simple application.",
     tech: "Java(Spring Boot)/Thyeme Leaf/Bootstrap",
   },
