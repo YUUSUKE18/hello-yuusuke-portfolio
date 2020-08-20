@@ -13,7 +13,7 @@ export default [
   },
   {
     title: "Hello Yuusuke",
-    path: "https://hello-yuusuke.work",
+    path: "https://www.hello-yuusuke.work/",
     description: "This is my portfolio.",
     tech: "JavaScript(React/Gatsby.js)/Tailwind CSS",
   },

@@ -15,7 +15,7 @@ const Contact = () => {
         </a>
       </div>
       <div className="email px-5">
-        <a href="yuusuke.job.1018@gmail.com">
+        <a href="mailto:yuusuke.job.1018@gmail.com">
           <FaEnvelope size={32} />
         </a>
       </div>
