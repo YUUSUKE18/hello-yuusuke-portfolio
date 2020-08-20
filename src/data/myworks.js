@@ -13,12 +13,12 @@ export default [
   },
   {
     title: "Hello Yuusuke",
-    path: "https://www.hello-yuusuke.work/",
+    path: "/",
     description: "This is my portfolio.",
     tech: "JavaScript(React/Gatsby.js)/Tailwind CSS",
   },
   {
-    title: "JS Simple Game",
+    title: "JS Simple Crash Game",
     path: "https://javascript-games.hostman.site/",
     description: "This is vanilla JavaScript Game",
     tech: "JavaScript(No Framework only JS)",
