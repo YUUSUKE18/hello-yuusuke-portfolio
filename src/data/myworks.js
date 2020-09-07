@@ -7,9 +7,8 @@ export default [
   },
   {
     title: "Programming Coaching App",
-    path: "https://github.com/YUUSUKE18",
-    description:
-      "This is a simple application including CRUD and Auth System. Sorry, moving to GCP from other service. Please let me know if you check this code.",
+    path: "http://35.197.37.198/",
+    description: "This is a simple application including CRUD and Auth System.",
     tech: "Java(Spring Boot)/Thyeme Leaf/Bootstrap",
   },
   {
