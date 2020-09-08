@@ -9,7 +9,7 @@ export default [
     title: "Programming Coaching App",
     path: "http://35.197.37.198/",
     description: "This is a simple application including CRUD and Auth System.",
-    tech: "Java(Spring Boot)/Thyeme Leaf/Bootstrap/GCP",
+    tech: "Java(Spring Boot)/Thyeme Leaf/Bootstrap/Docker/GCP",
   },
   {
     title: "Hello Yuusuke",
