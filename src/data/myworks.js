@@ -7,7 +7,7 @@ export default [
   },
   {
     title: "Programming Coaching App",
-    path: "http://35.197.37.198/",
+    path: "http://pcm-app.work/",
     description: "This is a simple application including CRUD and Auth System.",
     tech: "Java(Spring Boot)/Thyeme Leaf/Bootstrap/Docker/GCP",
   },
