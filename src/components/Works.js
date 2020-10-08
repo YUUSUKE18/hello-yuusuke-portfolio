@@ -18,12 +18,22 @@ const Works = () => {
                 <p class="text-gray-700 text-base">{mywork.tech}</p>
               </div>
               <div class="px-6 py-4 text-center">
-                <a
-                  href={mywork.path}
-                  className="bg-green-300 text-white p-3 rounded hover:bg-transparent hover:text-green-300 hover:border-solid hover:border-green-300"
-                >
-                  Detail Page
-                </a>
+                <div class="link">
+                  <a
+                    href={mywork.path}
+                    className="bg-green-300 text-white p-3 rounded hover:bg-transparent hover:text-green-300 hover:border-solid hover:border-green-300"
+                  >
+                    Detail Page
+                  </a>
+                </div>
+                <div class="link">
+                  <a
+                    href={mywork.github}
+                    className="bg-green-300 text-white p-3 rounded hover:bg-transparent hover:text-green-300 hover:border-solid hover:border-green-300"
+                  >
+                    Source
+                  </a>
+                </div>
               </div>
             </div>
           );
