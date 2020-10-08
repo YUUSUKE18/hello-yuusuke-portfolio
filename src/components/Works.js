@@ -29,7 +29,7 @@ const Works = () => {
                 <div class="link">
                   <a
                     href={mywork.github}
-                    className="bg-green-300 text-white p-3 rounded hover:bg-transparent hover:text-green-300 hover:border-solid hover:border-green-300"
+                    className="bg-green-300 text-white p-3 mt-3 rounded hover:bg-transparent hover:text-green-300 hover:border-solid hover:border-green-300"
                   >
                     Source
                   </a>
