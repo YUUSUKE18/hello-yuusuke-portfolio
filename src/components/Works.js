@@ -24,7 +24,7 @@ const Works = () => {
                     Detail Page
                   </a>
                 </div>
-                <div className="text-center">
+                <div className="text-center mt-5">
                   <a
                     href={mywork.github}
                     className="bg-green-300 text-white p-3 rounded hover:bg-transparent hover:text-green-300 hover:border-solid hover:border-green-300"
