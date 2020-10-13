@@ -28,10 +28,10 @@ export default [
     tech: "JavaScript(No Framework only JS)",
   },
   {
-    title: "E-Commerce Demo Site",
+    title: "E-Commerce Site",
     path: "https://github.com/YUUSUKE18/React_Commerce",
     github: "https://github.com/YUUSUKE18/React_Commerce",
-    description: "!!Under Buliding!!<br />This is E-commerce Site",
+    description: "!!Under Buliding!!This is E-commerce Site",
     tech: "MongoDB/Express/React/Node.js",
   },
 ];
