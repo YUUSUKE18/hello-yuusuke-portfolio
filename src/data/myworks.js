@@ -31,7 +31,7 @@ export default [
     title: "E-Commerce Site",
     path: "https://github.com/YUUSUKE18/React_Commerce",
     github: "https://github.com/YUUSUKE18/React_Commerce",
-    description: "!!Under Buliding!!This is E-commerce Site",
+    description: "!!Under Buliding this site!!This is E-commerce Site",
     tech: "MongoDB/Express/React/Node.js",
   },
 ];
