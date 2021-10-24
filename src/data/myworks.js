@@ -21,13 +21,6 @@ export default [
     tech: "JavaScript(React/Gatsby.js)/Tailwind CSS",
   },
   {
-    title: "Simple Crash Game",
-    path: "https://javascript-games.hostman.site/",
-    github: "https://github.com/YUUSUKE18/Javascript-Games",
-    description: "This is vanilla JavaScript Game",
-    tech: "JavaScript(No Framework only JS)",
-  },
-  {
     title: "E-Commerce Site",
     path: "https://github.com/YUUSUKE18/React_Commerce",
     github: "https://github.com/YUUSUKE18/React_Commerce",
