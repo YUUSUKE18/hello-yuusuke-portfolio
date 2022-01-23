@@ -1,11 +1,11 @@
 export default [
-  {
+  /*{
     title: "Hello React Blog",
     path: "https://hello-react-blog.netlify.app/",
     github: "https://github.com/YUUSUKE18/hello-react",
     description: "This is a react output blog.",
     tech: "JavaScript(React/Gatsby.js)/Tailwind CSS",
-  },
+  }, */
   {
     title: "Programming Coaching App",
     path: "http://pcm-app.work/",
