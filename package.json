@@ -1,37 +1,16 @@
 {
-  "name": "hello-yuusuke",
-  "private": true,
-  "description": "This is Yuusuke Okamoto Portfolio site.",
-  "version": "0.1.0",
-  "license": "MIT",
+  "name": "hello-yuusuke-portfolio",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md}\"",
-    "start": "npm run develop",
-    "serve": "gatsby serve",
-    "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
   },
   "dependencies": {
-    "gatsby": "^2.23.12",
-    "gatsby-image": "^2.4.16",
-    "gatsby-plugin-manifest": "^2.4.21",
-    "gatsby-plugin-netlify": "^2.3.12",
-    "gatsby-plugin-offline": "^3.2.22",
-    "gatsby-plugin-postcss": "^2.3.11",
-    "gatsby-plugin-react-helmet": "^3.3.10",
-    "gatsby-plugin-sharp": "^2.6.27",
-    "gatsby-plugin-sitemap": "^2.4.11",
-    "gatsby-source-filesystem": "^2.3.23",
-    "gatsby-transformer-sharp": "^2.5.13",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^3.10.0",
-    "tailwindcss": "^1.6.1"
-  },
-  "devDependencies": {
-    "prettier": "2.0.5"
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.6",
+    "tailwindcss": "^4.1.18"
   }
 }

@@ -1,0 +1,38 @@
+---
+interface Props {
+	title: string;
+	description: string;
+	href: string;
+    image?: string;
+}
+
+const { title, description, href, image } = Astro.props;
+---
+
+<article class="flex flex-col items-start justify-between bg-zinc-50 dark:bg-zinc-900 rounded-2xl p-6 transition-all hover:shadow-lg border border-zinc-200 dark:border-zinc-800">
+    <div class="relative w-full">
+        {image && (
+             <img
+                src={image}
+                alt={title}
+                class="aspect-[16/9] w-full rounded-2xl bg-zinc-100 dark:bg-zinc-800 object-cover sm:aspect-[2/1] lg:aspect-[3/2]"
+            />
+        )}
+        {!image && (
+             <div class="aspect-[16/9] w-full rounded-2xl bg-zinc-200 dark:bg-zinc-800 flex items-center justify-center text-zinc-400 sm:aspect-[2/1] lg:aspect-[3/2]">
+                <span class="text-sm">No Image</span>
+             </div>
+        )}
+    </div>
+    <div class="max-w-xl mt-4">
+        <h3 class="mt-3 text-lg font-semibold leading-6 text-zinc-900 dark:text-white group-hover:text-zinc-600">
+            <a href={href}>
+                <span class="absolute inset-0"></span>
+                {title}
+            </a>
+        </h3>
+        <p class="mt-5 line-clamp-3 text-sm leading-6 text-zinc-600 dark:text-zinc-400">
+            {description}
+        </p>
+    </div>
+</article>

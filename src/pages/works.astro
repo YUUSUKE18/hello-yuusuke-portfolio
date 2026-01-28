@@ -1,0 +1,43 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Card from '../components/Card.astro';
+
+const projects = [
+  {
+    title: "This Portfolio",
+    description: "My personal portfolio website built with Astro and TailwindCSS.",
+    href: "https://github.com/yuusuke/hello-yuusuke-portfolio", // Dummy link if needed, or internal
+    image: "" // Placeholder
+  },
+  {
+    title: "Project Alpha",
+    description: "A comprehensive dashboard for analytics.",
+    href: "#",
+    image: ""
+  },
+  {
+    title: "Project Beta",
+    description: "E-commerce platform with Next.js.",
+    href: "#",
+    image: ""
+  }
+];
+---
+
+<Layout title="Works | Yuusuke's Portfolio">
+  <div class="bg-white dark:bg-zinc-950 py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8">
+      <div class="mx-auto max-w-2xl text-center">
+        <h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">Works</h2>
+        <p class="mt-2 text-lg leading-8 text-zinc-600 dark:text-zinc-300">
+          Here are some of the projects I've worked on.
+        </p>
+      </div>
+      <div class="mx-auto mt-16 grid max-w-2xl grid-cols-1 gap-x-8 gap-y-20 lg:mx-0 lg:max-w-none lg:grid-cols-3">
+        {projects.map((project) => (
+            <Card {...project} />
+        ))}
+      </div>
+    </div>
+  </div>
+</Layout>
