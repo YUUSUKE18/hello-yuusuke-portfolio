@@ -1,15 +1,18 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
 
 const skills = [
-  "Astro",
-  "React",
+  "Golang",
   "TypeScript",
-  "TailwindCSS",
-  "Node.js",
-  "Git",
-  "Next.js",
-  "UI/UX Design"
+  "React",
+  "Astro",
+  "Google Cloud",
+  "Amazon Web Services",
+];
+const certifications = [
+  "Google Cloud Professional Architect",
+  "Fundamental Information Technology Engineer Examination(基本情報技術者試験)",
+  "Applied Information Technology Engineer Examination(応用情報技術者試験)",
 ];
 ---
 
@@ -17,43 +20,82 @@ const skills = [
   <div class="bg-white dark:bg-zinc-950 py-24 sm:py-32">
     <div class="mx-auto max-w-7xl px-6 lg:px-8">
       <div class="mx-auto max-w-2xl lg:mx-0">
-        <h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">About Me</h2>
+        <h2
+          class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl"
+        >
+          About Me
+        </h2>
         <p class="mt-6 text-lg leading-8 text-zinc-600 dark:text-zinc-300">
-          I'm a frontend developer based in Japan. I love creating beautiful and functional web applications.
-          With a strong focus on user experience and modern web standards, I strive to build software that makes a difference.
+          I'm a software engineer based in Japan.
         </p>
       </div>
 
       <div class="mx-auto mt-16 max-w-2xl lg:mx-0 lg:max-w-none">
-        <div class="grid grid-cols-1 gap-x-8 gap-y-16 lg:grid-cols-2">
-            <div>
-                <h3 class="text-2xl font-semibold leading-7 text-zinc-900 dark:text-white">Profile</h3>
-                <dl class="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:gap-x-8">
-                  <div class="border-t border-zinc-200 dark:border-zinc-800 pt-4">
-                    <dt class="font-medium text-zinc-900 dark:text-white">Name</dt>
-                    <dd class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">Yuusuke</dd>
-                  </div>
-                  <div class="border-t border-zinc-200 dark:border-zinc-800 pt-4">
-                    <dt class="font-medium text-zinc-900 dark:text-white">Role</dt>
-                    <dd class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">Frontend Developer</dd>
-                  </div>
-                  <div class="border-t border-zinc-200 dark:border-zinc-800 pt-4">
-                    <dt class="font-medium text-zinc-900 dark:text-white">Location</dt>
-                    <dd class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">Tokyo, Japan</dd>
-                  </div>
-                </dl>
+        <div class="grid grid-cols-2 gap-x-8 gap-y-16 lg:grid-cols-2">
+          <div>
+            <h3
+              class="text-2xl font-semibold leading-7 text-zinc-900 dark:text-white"
+            >
+              Profile
+            </h3>
+            <dl
+              class="mt-8 grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:gap-x-8"
+            >
+              <div class="border-t border-zinc-200 dark:border-zinc-800 pt-4">
+                <dt class="font-medium text-zinc-900 dark:text-white">Name</dt>
+                <dd class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+                  Yuusuke Okamoto
+                </dd>
+              </div>
+              <div class="border-t border-zinc-200 dark:border-zinc-800 pt-4">
+                <dt class="font-medium text-zinc-900 dark:text-white">Role</dt>
+                <dd class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+                  Software Engineer
+                </dd>
+              </div>
+              <div class="border-t border-zinc-200 dark:border-zinc-800 pt-4">
+                <dt class="font-medium text-zinc-900 dark:text-white">
+                  Location
+                </dt>
+                <dd class="mt-2 text-sm text-zinc-500 dark:text-zinc-400">
+                  Tokyo, Japan
+                </dd>
+              </div>
+            </dl>
+          </div>
+
+          <div>
+            <h3
+              class="text-2xl font-semibold leading-7 text-zinc-900 dark:text-white"
+            >
+              Skills
+            </h3>
+            <div class="mt-8 flex flex-wrap gap-4">
+              {
+                skills.map((skill) => (
+                  <span class="inline-flex items-center rounded-md bg-zinc-50 dark:bg-zinc-900 px-3 py-2 text-sm font-medium text-zinc-600 dark:text-zinc-300 ring-1 ring-inset ring-zinc-500/10 dark:ring-zinc-400/20">
+                    {skill}
+                  </span>
+                ))
+              }
             </div>
-            
-            <div>
-                <h3 class="text-2xl font-semibold leading-7 text-zinc-900 dark:text-white">Skills</h3>
-                <div class="mt-8 flex flex-wrap gap-4">
-                    {skills.map((skill) => (
-                        <span class="inline-flex items-center rounded-md bg-zinc-50 dark:bg-zinc-900 px-3 py-2 text-sm font-medium text-zinc-600 dark:text-zinc-300 ring-1 ring-inset ring-zinc-500/10 dark:ring-zinc-400/20">
-                            {skill}
-                        </span>
-                    ))}
-                </div>
+          </div>
+          <div>
+            <h3
+              class="text-2xl font-semibold leading-7 text-zinc-900 dark:text-white"
+            >
+              Certification
+            </h3>
+            <div class="mt-8 flex flex-wrap gap-4">
+              {
+                certifications.map((certification) => (
+                  <span class="inline-flex items-center rounded-md bg-zinc-50 dark:bg-zinc-900 px-3 py-2 text-sm font-medium text-zinc-600 dark:text-zinc-300 ring-1 ring-inset ring-zinc-500/10 dark:ring-zinc-400/20">
+                    {certification}
+                  </span>
+                ))
+              }
             </div>
+          </div>
         </div>
       </div>
     </div>

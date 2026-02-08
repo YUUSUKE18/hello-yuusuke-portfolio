@@ -1,42 +1,57 @@
 ---
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import { Image } from "astro:assets";
+import githubImg from "../assets/github.png";
+import linkedinImg from "../assets/linkedin.png";
+import emailImg from "../assets/email.png";
 ---
 
 <Layout title="Contact | Yuusuke's Portfolio">
   <div class="isolate bg-white dark:bg-zinc-950 px-6 py-24 sm:py-32 lg:px-8">
     <div class="mx-auto max-w-2xl text-center">
-      <h2 class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl">Contact Me</h2>
+      <h2
+        class="text-3xl font-bold tracking-tight text-zinc-900 dark:text-white sm:text-4xl"
+      >
+        Contact Me
+      </h2>
       <p class="mt-2 text-lg leading-8 text-zinc-600 dark:text-zinc-300">
         Have a question or want to work together? Send me a message.
       </p>
     </div>
-    <form name="contact" method="POST" data-netlify="true" class="mx-auto mt-16 max-w-xl sm:mt-20">
-      <input type="hidden" name="form-name" value="contact" />
-      <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-        <div class="sm:col-span-2">
-          <label for="name" class="block text-sm font-semibold leading-6 text-zinc-900 dark:text-white">Name</label>
-          <div class="mt-2.5">
-            <input type="text" name="name" id="name" autocomplete="name" class="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:bg-zinc-900 dark:ring-zinc-700 dark:text-white" required />
-          </div>
-        </div>
-        <div class="sm:col-span-2">
-          <label for="email" class="block text-sm font-semibold leading-6 text-zinc-900 dark:text-white">Email</label>
-          <div class="mt-2.5">
-            <input type="email" name="email" id="email" autocomplete="email" class="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:bg-zinc-900 dark:ring-zinc-700 dark:text-white" required />
-          </div>
-        </div>
-        <div class="sm:col-span-2">
-          <label for="message" class="block text-sm font-semibold leading-6 text-zinc-900 dark:text-white">Message</label>
-          <div class="mt-2.5">
-            <textarea name="message" id="message" rows="4" class="block w-full rounded-md border-0 px-3.5 py-2 text-zinc-900 shadow-sm ring-1 ring-inset ring-zinc-300 placeholder:text-zinc-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6 dark:bg-zinc-900 dark:ring-zinc-700 dark:text-white" required></textarea>
-          </div>
-        </div>
+    <div class="flex justify-center gap-6 lg:mt-10 sm:mt-5">
+      <div class="github">
+        <a href="https://github.com/YUUSUKE18">
+          <Image
+            src={githubImg}
+            alt="github"
+            width={50}
+            height={50}
+            class="dark:invert"
+          />
+        </a>
       </div>
-      <div class="mt-10">
-        <button type="submit" class="block w-full rounded-md bg-indigo-600 px-3.5 py-2.5 text-center text-sm font-semibold text-white shadow-sm hover:bg-indigo-500 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">
-            Send Message
-        </button>
+      <div class="linkedin">
+        <a href="https://linkedin.com/in/yuusuke-okamoto-352828133">
+          <Image
+            src={linkedinImg}
+            alt="linkedin"
+            width={50}
+            height={50}
+            class="dark:invert"
+          />
+        </a>
       </div>
-    </form>
+      <div class="email">
+        <a href="mailto:yuusuke.job.1018@gmail.com">
+          <Image
+            src={emailImg}
+            alt="email"
+            width={50}
+            height={50}
+            class="dark:invert"
+          />
+        </a>
+      </div>
+    </div>
   </div>
 </Layout>
