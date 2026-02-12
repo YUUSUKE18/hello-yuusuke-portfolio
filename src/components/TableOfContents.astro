@@ -1,0 +1,35 @@
+---
+interface Props {
+    headings: { depth: number; slug: string; text: string }[];
+}
+
+const { headings } = Astro.props;
+---
+
+<nav class="toc">
+    <h2 class="font-bold text-lg mb-4 text-zinc-900 dark:text-white">目次</h2>
+    <ul class="space-y-2 text-sm">
+        {
+            headings.map((heading) => (
+                <li
+                    class={`
+            ${heading.depth === 2 ? "pl-0" : "pl-4"}
+          `}
+                >
+                    <a
+                        href={`#${heading.slug}`}
+                        class="block text-zinc-600 dark:text-zinc-400 hover:text-zinc-900 dark:hover:text-white transition-colors"
+                    >
+                        {heading.text}
+                    </a>
+                </li>
+            ))
+        }
+    </ul>
+</nav>
+
+<script>
+    // Smooth scroll behavior is handled by CSS (html { scroll-behavior: smooth; }) typically,
+    // or we can add it here if needed.
+    // For now, relying on CSS or default browser behavior.
+</script>
