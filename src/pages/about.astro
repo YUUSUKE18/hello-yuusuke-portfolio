@@ -14,6 +14,8 @@ const certifications = [
   "Fundamental Information Technology Engineer Examination(基本情報技術者試験)",
   "Applied Information Technology Engineer Examination(応用情報技術者試験)",
 ];
+
+const publisheds = ["Go言語で試す！トマトアーキテクチャ"];
 ---
 
 <Layout title="About | Yuusuke's Portfolio">
@@ -91,6 +93,22 @@ const certifications = [
                 certifications.map((certification) => (
                   <span class="inline-flex items-center rounded-md bg-zinc-50 dark:bg-zinc-900 px-3 py-2 text-sm font-medium text-zinc-600 dark:text-zinc-300 ring-1 ring-inset ring-zinc-500/10 dark:ring-zinc-400/20">
                     {certification}
+                  </span>
+                ))
+              }
+            </div>
+          </div>
+          <div>
+            <h3
+              class="text-2xl font-semibold leading-7 text-zinc-900 dark:text-white"
+            >
+              Published
+            </h3>
+            <div class="mt-8 flex flex-wrap gap-4">
+              {
+                publisheds.map((published) => (
+                  <span class="inline-flex items-center rounded-md bg-zinc-50 dark:bg-zinc-900 px-3 py-2 text-sm font-medium text-zinc-600 dark:text-zinc-300 ring-1 ring-inset ring-zinc-500/10 dark:ring-zinc-400/20">
+                    {published}
                   </span>
                 ))
               }

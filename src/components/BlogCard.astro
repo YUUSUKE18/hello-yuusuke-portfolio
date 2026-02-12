@@ -1,0 +1,81 @@
+---
+import type { CollectionEntry } from "astro:content";
+import { Image } from "astro:assets";
+
+interface Props {
+    post: CollectionEntry<"blog">;
+}
+
+const { post } = Astro.props;
+---
+
+<a href={`/blog/${post.slug}/`} class="group block">
+    <article
+        class="flex flex-col sm:flex-row gap-4 p-4 border rounded-lg hover:shadow-lg transition-shadow dark:bg-gray-800 border-gray-200 dark:border-gray-700 h-full"
+    >
+        <div class="flex flex-row gap-4">
+            <div class="shrink-0">
+                {
+                    post.data.image && (
+                        <Image
+                            src={post.data.image}
+                            alt={post.data.title}
+                            width={100}
+                            height={100}
+                            class="w-[100px] h-[100px] object-cover"
+                        />
+                    )
+                }
+            </div>
+            <div class="flex flex-col justify-between w-full">
+                <div>
+                    <h3
+                        class="text-xl font-bold text-gray-900 dark:text-gray-100 group-hover:text-blue-600 dark:group-hover:text-blue-400 mb-2"
+                    >
+                        {post.data.title}
+                    </h3>
+                </div>
+
+                <div
+                    class="flex flex-col gap-y-1 text-sm text-gray-500 dark:text-gray-400 mt-auto"
+                >
+                    {
+                        post.data.tags && (
+                            <div class="flex flex-wrap">
+                                {post.data.tags.map((tag) => (
+                                    <div class="py-1 pr-2text-xs">#{tag}</div>
+                                ))}
+                            </div>
+                        )
+                    }
+                    <time datetime={post.data.pubDate.toISOString()}>
+                        Created: {
+                            post.data.pubDate.toLocaleDateString("en-us", {
+                                year: "numeric",
+                                month: "short",
+                                day: "numeric",
+                            })
+                        }
+                    </time>
+                    {
+                        post.data.updatedDate && (
+                            <time
+                                datetime={post.data.updatedDate.toISOString()}
+                            >
+                                Updated:{" "}
+                                {post.data.updatedDate.toLocaleDateString(
+                                    "en-us",
+                                    {
+                                        year: "numeric",
+                                        month: "short",
+                                        day: "numeric",
+                                    },
+                                )}
+                            </time>
+                        )
+                    }
+                </div>
+            </div>
+        </div>
+    </article>
+</a>
